@@ -42,7 +42,7 @@
         function helpHere() {
             document.getElementById('help').innerHTML= "insert your daily electricity consumption in the input box to determine the condition of your electric supply"
         }
-        function checkKWh() {
+        function checkKWh() {//status variables
             let Kwh = document.getElementById('kWh').value;
             let A = "Lifetime Consumer";
             let B = "Low Consumer";
@@ -50,7 +50,7 @@
             let D = "Costly Consumer";
             let E = "Excessive Consumer";
 
-            if (isNaN(Kwh) || Kwh < 0) {
+            if (isNaN(Kwh) || Kwh < 0) {// determining the statuses
                 alert('Please input a realistic value!');
             }
             else if (Kwh <= 100) {
